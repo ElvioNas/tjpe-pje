@@ -1,0 +1,39 @@
+# Ambientes virtuais
+venv/
+env/
+ENV/
+.venv
+
+# Credenciais
+.env
+.env.local
+.env.*.local
+
+# IDE
+.vscode/
+.idea/
+*.pyc
+__pycache__/
+*.pyo
+*.pyd
+.Python
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Arquivos gerados
+*.log
+*.pot
+*.mo
+dist/
+build/
+*.egg-info/
+
+# Dependências instaladas
+site-packages/
+
+# Downloads e arquivos temporários
+downloads/
+temp/
+*.tmp
