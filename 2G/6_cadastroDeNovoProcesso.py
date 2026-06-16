@@ -20,6 +20,7 @@ time.sleep(2)
 driver.find_element(By.ID, "username").send_keys("02112357417")
 time.sleep(2)
 driver.find_element(By.ID, "password").send_keys("123")
+
 time.sleep(2)
 driver.find_element(By.ID, "btnEntrar").click()
 time.sleep(2)
@@ -28,6 +29,29 @@ time.sleep(2)
 driver.find_element(By.XPATH, "//a[contains(text(), 'Processo')]").click()
 time.sleep(2)
 driver.find_element(By.PARTIAL_LINK_TEXT, "Novo processo").click()
-
+time.sleep(2)
+driver.find_element(By.XPATH, "//span[contains(text(), 'Selecione')]").click()
+time.sleep(2)
+driver.find_element(By.XPATH, "//li[contains(text(), 'DIREITO PENAL')]").click()
+time.sleep(2)
+driver.find_element(By.XPATH, "//span[contains(text(), 'Selecione')]").click()
+time.sleep(2)
+driver.find_element(By.XPATH, "//li[contains(text(), 'Recife - TJPE')]").click()
+time.sleep(2)
+driver.find_element(By.XPATH, "//span[contains(text(), 'Selecione')]").click()
+time.sleep(2)
+driver.find_element(By.XPATH, "//li[contains(text(), 'AÇÃO CIVIL PÚBLICA (65)')]").click()
+time.sleep(2)
+driver.find_element(By.ID, "processoTrfForm:incluiProcessoButton").click()
+time.sleep(2)
+driver.find_element(By.ID, "r_processoAssuntoListList:0:j_id396:j_id397:j_id398").click()
+time.sleep(2)
+driver.find_element(By.XPATH, "//td[contains(text(), 'Partes')]").click()
+time.sleep(2)
 
 time.sleep(1000)
+
+
+
+
+

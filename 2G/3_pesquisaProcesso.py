@@ -9,7 +9,7 @@ chrome_options.add_argument("--start-maximized")
 driver = webdriver.Chrome(options=chrome_options)
 
 # Acessa o site
-driver.get("https://homologacao-pje.app.tjpe.jus.br/h06-1g/home.seam")
+driver.get("https://homologacao-pje.app.tjpe.jus.br/h06-2g/home.seam")
 
 time.sleep(2)
 
@@ -17,9 +17,25 @@ time.sleep(2)
 
 driver.find_element(By.ID, "username").send_keys("02112357417")
 time.sleep(2)
-driver.find_element(By.ID, "password").send_keys("tjpe1977")
+driver.find_element(By.ID, "password").send_keys("123")
 time.sleep(2)
 driver.find_element(By.ID, "btnEntrar").click()
 time.sleep(2)
+driver.find_element(By.CLASS_NAME, "botao-menu").click()
+time.sleep(1)
+driver.find_element(By.XPATH, "//a[contains(text(), 'Processo')]").click()
+time.sleep(2)
+time.sleep(2)
+driver.find_element(By.PARTIAL_LINK_TEXT, "Pesquisar").click()
+time.sleep(2)
+
+#driver.find_element(By.XPATH, "//a[contains(text(), 'Localizações')]")
+#driver.find_element(By.XPATH, "//a[contains(text(), 'Consulta pública')]")
+#driver.find_element(By.XPATH, "//a[contains(text(), 'Informações de distribuição')]")
+#driver.find_element(By.XPATH, "//a[contains(text(), 'Processo não distribuído')]")
+#driver.find_element(By.XPATH, "//a[contains(text(), 'Banco Nacional de Devedores Trabalhistas')]")
+#driver.find_element(By.XPATH, "//a[contains(text(), 'Consulta processos de terceiros')]")
+#driver.find_element(By.XPATH, "//a[contains(text(), 'Consulta de prazos')]")
+#driver.find_element(By.XPATH, "//a[contains(text(), 'AJG')]")
 
 time.sleep(1000)

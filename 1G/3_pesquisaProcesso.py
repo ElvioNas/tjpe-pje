@@ -23,5 +23,7 @@ driver.find_element(By.ID, "password").send_keys("tjpe1977")
 time.sleep(2)
 driver.find_element(By.ID, "btnEntrar").click()
 time.sleep(2)
+driver.find_element(By.CLASS_NAME, "botao-menu").click()
+time.sleep(1)
 
 time.sleep(1000)

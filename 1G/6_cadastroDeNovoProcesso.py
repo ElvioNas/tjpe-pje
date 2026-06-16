@@ -41,9 +41,13 @@ driver.find_element(By.XPATH, "//span[contains(text(), 'Selecione')]").click()
 time.sleep(2)
 driver.find_element(By.XPATH, "//li[contains(text(), 'CRIMES AMBIENTAIS (293)')]").click()
 time.sleep(2)
-
 driver.find_element(By.ID, "processoTrfForm:incluiProcessoButton").click()
+time.sleep(2)
+driver.find_element(By.ID, "r_processoAssuntoListList:0:j_id396:j_id397:j_id398").click()
+time.sleep(2)
+driver.find_element(By.XPATH, "//td[contains(text(), 'Partes')]").click()
+time.sleep(2)
 
-
+time.sleep(2)
 
 time.sleep(1000)
